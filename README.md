@@ -1,1 +1,3 @@
-# YouNow-Python-API
+# YouNow API  
+  
+YouNow API wrapper for python :)
