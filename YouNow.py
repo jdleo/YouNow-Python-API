@@ -21,3 +21,13 @@ class YouNow:
         data = response.json()
         return data
 
+    def follow(self, userID, channelID, broadcastID):
+        followUser = "https://api.younow.com/php/api/channel/fan"
+        _userID = userID
+        _channelID = channelID
+        _broadcastID = broadcastID
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        payload = {'userId' :_userID, 'channelId':_channelID, 'broadcastId':_broadcastID, 'fan_type':'BROADCAST'}
+        session = requests.Session()
+        followed = session.post(followUser, headers=headers, data=payload)
+        print(followed)
