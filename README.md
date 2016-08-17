@@ -1,6 +1,12 @@
 # YouNow API  
   
 YouNow API wrapper for python :)  
+## Dependencies & setup:  
+You will need to install requests framework (if you don't have it yet... I hope you do...)  
+Since I don't have a pip setup yet, You'll just need to download the YouNow.py file and put it in the same folder as your script that you write. 
+```
+from YouNow import YouNow
+```
   
 ## Documentation  
   
