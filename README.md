@@ -17,7 +17,14 @@ for i in users['trending_users']:
 ```  
   
 Get Trending Tags:  
-`data = YouNow.getTrendingTags(None)`  
-`print(data)`  
+```  
+data = YouNow.getTrendingTags(None) 
+print(data)  
+```    
   
+Follow A User (requires google login):
+```
+YouNow.follow(None, userID, channelID, broadcastID)
+##that will follow them. Currently investigating to see if broadcastID and channelID are relevant formdata, but for now, it's safe to pass those in as well. This function will be inoperable until i get oauth2 working. we need to have a google session logged in
+```  
 All of the data is in JSON, but thanks to JSON+requests, you can simply call certain values in the output just as if it were a regular python list :)
