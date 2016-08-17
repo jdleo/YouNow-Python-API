@@ -20,8 +20,13 @@ Get Trending Tags:
 ```  
 data = YouNow.getTrendingTags(None) 
 print(data)  
-```    
-  
+```   
+See list of people following a certain user. Their "fans" lol  
+```
+YouNow.getFans(self, userID, startFrom)
+##startFrom=0 will start from beginning of list, I think it's pulling 10 at a time. Write a loop to get bigger list :)
+```  
+    
 Follow A User (requires google login):
 ```
 YouNow.follow(None, userID, channelID, broadcastID)
